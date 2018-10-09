@@ -33,27 +33,36 @@ namespace CandleShop.RestAPI.Controllers
 
         // GET api/values/5
         [HttpGet("{id}")]
-        public ActionResult<string> Get(int id)
+        public ActionResult<Candle> Get(int id)
         {
-            return "value";
+            if (id < 1) return BadRequest("Id must be greater then 0");
+            
+            return _candleService.CandleFoundById(id);
         }
 
         // POST api/values
         [HttpPost]
-        public void Post([FromBody] string value)
+        public void Post([FromBody] Candle candle)
         {
+            _candleService.CreateOwner(candle);
         }
 
         // PUT api/values/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public void Put(int id, [FromBody] Candle newCandleData)
         {
+            _candleService.UpdateCandle(id, newCandleData);
         }
 
         // DELETE api/values/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public ActionResult Delete(int id)
         {
+            if (id < 1) return BadRequest("Id must be greater then 0");
+
+            _candleService.DeleteCandle(id);
+
+            return Ok();
         }
     }
 }

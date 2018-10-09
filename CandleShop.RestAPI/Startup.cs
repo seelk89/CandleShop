@@ -73,14 +73,14 @@ namespace CandleShop.RestAPI
             }
             */
             
-            /*
             using (var scope = app.ApplicationServices.CreateScope())
             {
                 var ctx = scope.ServiceProvider.GetService<CandleShopContext>();
 
-                DbInitializer.SeedDb(ctx);
+                ctx.Database.EnsureCreated();
+                
+                //DbInitializer.SeedDb(ctx);
             }
-            */
             
             app.UseHttpsRedirection();
             
