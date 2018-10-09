@@ -44,7 +44,7 @@ namespace CandleShop.RestAPI.Controllers
         [HttpPost]
         public void Post([FromBody] Candle candle)
         {
-            _candleService.CreateOwner(candle);
+            _candleService.CreateCandle(candle);
         }
 
         // PUT api/values/5

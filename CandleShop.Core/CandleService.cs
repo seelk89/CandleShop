@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using CandleShop.Core.DomainServices;
 using CandleShop.Core.Entity;
@@ -24,8 +25,10 @@ namespace CandleShop.Core
             return _candleRepository.CandleFoundById(id);
         }
 
-        public void CreateOwner(Candle candle)
+        public void CreateCandle(Candle candle)
         {
+            if (string.IsNullOrEmpty(candle.name))
+                throw new InvalidDataException("Candle needs a name");
             _candleRepository.CreateCandle(candle);
         }
 

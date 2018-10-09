@@ -9,7 +9,7 @@ namespace CandleShop.Core
 
         Candle CandleFoundById(int id);
 
-        void CreateOwner(Candle candle);
+        void CreateCandle(Candle candle);
 
         void UpdateCandle(int id, Candle newCandleData);
 
