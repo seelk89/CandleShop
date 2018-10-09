@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CandleShop.RestAPI", "CandleShop.RestAPI\CandleShop.RestAPI.csproj", "{AEC9E6B3-2A33-4754-928A-2DA68FC105F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CandleShop.Core.Entiry", "CandleShop.Core.Entiry\CandleShop.Core.Entiry.csproj", "{2055BAE2-ED88-474E-896B-B78FB5D54D45}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CandleShop.Core", "CandleShop.Core\CandleShop.Core.csproj", "{02B8500C-F996-4E5F-9B0F-7A8F9F5D3883}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CandleShop.Infrastructure.Data", "CandleShop.Infrastructure.Data\CandleShop.Infrastructure.Data.csproj", "{A74A35E6-CEFB-4B03-A2ED-3BE5C74550F7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AEC9E6B3-2A33-4754-928A-2DA68FC105F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEC9E6B3-2A33-4754-928A-2DA68FC105F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEC9E6B3-2A33-4754-928A-2DA68FC105F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEC9E6B3-2A33-4754-928A-2DA68FC105F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2055BAE2-ED88-474E-896B-B78FB5D54D45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2055BAE2-ED88-474E-896B-B78FB5D54D45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2055BAE2-ED88-474E-896B-B78FB5D54D45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2055BAE2-ED88-474E-896B-B78FB5D54D45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02B8500C-F996-4E5F-9B0F-7A8F9F5D3883}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02B8500C-F996-4E5F-9B0F-7A8F9F5D3883}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02B8500C-F996-4E5F-9B0F-7A8F9F5D3883}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02B8500C-F996-4E5F-9B0F-7A8F9F5D3883}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A74A35E6-CEFB-4B03-A2ED-3BE5C74550F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A74A35E6-CEFB-4B03-A2ED-3BE5C74550F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A74A35E6-CEFB-4B03-A2ED-3BE5C74550F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A74A35E6-CEFB-4B03-A2ED-3BE5C74550F7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp2.1</TargetFramework>
+        <UserSecretsId>ccf3c817-bb43-4876-8b47-cf510f7a7137</UserSecretsId>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Folder Include="wwwroot\" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.App" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\CandleShop.Core\CandleShop.Core.csproj" />
+      <ProjectReference Include="..\CandleShop.Infrastructure.Data\CandleShop.Infrastructure.Data.csproj" />
+    </ItemGroup>
+
+</Project>

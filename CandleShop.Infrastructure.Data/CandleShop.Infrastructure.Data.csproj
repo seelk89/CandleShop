@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp2.1</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\CandleShop.Core.Entiry\CandleShop.Core.Entiry.csproj" />
+      <ProjectReference Include="..\CandleShop.Core\CandleShop.Core.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Design">
+        <Version>2.1.4</Version>
+      </PackageReference>
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite">
+        <Version>2.1.4</Version>
+      </PackageReference>
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite.Core">
+        <Version>2.1.4</Version>
+      </PackageReference>
+      <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer">
+        <Version>2.1.4</Version>
+      </PackageReference>
+    </ItemGroup>
+
+</Project>
